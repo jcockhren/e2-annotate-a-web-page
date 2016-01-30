@@ -10,3 +10,9 @@ Features
 - The ability to share Anotations via Facebook
 - The ability to pull info on the highlighted text from the wiki API
 
+**Links to Related pages**
+
+[Github](https://github.com/jcockhren/e2-annotate-a-web-page)
+[Trillo](https://trello.com/b/j8NZCzKg/web-annotation)
+[Mockups](https://moqups.com/#!/edit/Joelharris/uLJ82639)
+
