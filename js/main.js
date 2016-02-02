@@ -1,13 +1,14 @@
 $('#button').on('click', function(){
   var value = $('#inputBox').val();
+  var valLength = value.length;
+  console.log(valLength);
  
   $('p').each(function(index){
     var hello = $(this).text();
-    console.log(hello);
     var x = hello.search(value);
-    console.log(x);
+    console.log("found at position",x);
     if(x !== -1 ){
-      console.log("results found");
+      
     }else{
       console.log("no results found");
     }
