@@ -8,7 +8,8 @@ $('#button').on('click', function(){
     var x = hello.search(value);
     console.log("found at position",x);
     if(x !== -1 ){
-      
+     var newHello = hello.replace(value, "fuzzy bunnies");
+     $(this).text(newHello);
     }else{
       console.log("no results found");
     }
