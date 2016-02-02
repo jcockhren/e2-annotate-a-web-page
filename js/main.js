@@ -13,8 +13,5 @@ $('#button').on('click', function(){
     }else{
       console.log("no results found");
     }
-
-
   })
-
 })
