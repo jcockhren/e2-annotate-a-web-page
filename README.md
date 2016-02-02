@@ -12,7 +12,7 @@ Features
 
 **Links to Related pages**
 
-[Github](https://github.com/jcockhren/e2-annotate-a-web-page)
-[Trillo](https://trello.com/b/j8NZCzKg/web-annotation)
-[Mockups](https://moqups.com/#!/edit/Joelharris/uLJ82639)
+- The Github Project Link [Github](https://github.com/jcockhren/e2-annotate-a-web-page)
+- The Trillo Project Link [Trillo](https://trello.com/b/j8NZCzKg/web-annotation)
+- The Mockup Project Link [Mockups](https://moqups.com/#!/edit/Joelharris/uLJ82639)
 
