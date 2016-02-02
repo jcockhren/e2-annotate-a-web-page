@@ -12,6 +12,6 @@ Purpose - Allow a user to add notes or Anotation to a selected web page
 
 **Links to Related pages**
 
-- The Trillo Project Link [Trillo](https://trello.com/b/j8NZCzKg/web-annotation)
+- The Trello Project Link [Trello](https://trello.com/b/j8NZCzKg/web-annotation)
 - The Mockup Project Link [Mockups](https://moqups.com/#!/edit/Joelharris/uLJ82639)
 
