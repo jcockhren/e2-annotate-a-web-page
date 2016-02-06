@@ -18,12 +18,8 @@ $('#button').on('click', function(){
 
 $(document).on('mouseup', function(){
   var selection = document.getSelection();
-  console.log(selection);
   var selectedText = selection.toString();
-  console.log(selectedText);
-  var selectionNode = selection.anchorNode.data;
-  console.log(selectionNode);
+  var selectionNode = selection.anchorNode.parentElement.innerHTML;
   var markedText = selectionNode.replace(selectedText, "<mark>"+selectedText+"</mark>");
   $('.paragraph1').html(markedText);
-
 })
