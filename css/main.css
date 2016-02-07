@@ -6,6 +6,19 @@
   background-color: yellow;
 }
 
+.wikiWindow {
+  position: absolute;
+  top: 5%;
+  left: 5%;
+  width: 85%;
+  border: 3px solid black;
+  border-radius: 20px;
+  padding: 10px;
+  background-color: white;
+}
+
+
+
 /*p{
   font-size: 3em;
 }*/
