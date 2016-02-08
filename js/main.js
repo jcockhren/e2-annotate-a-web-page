@@ -11,9 +11,9 @@ function getSelectionText() {
 }
 // getSelectionText();
 $(function () {
-  $('[data-toggle="tooltip"]').tooltip()
+  $('[data-toggle="popover"]').popover();
 });
-$('#button').tooltip()
+$('#button').popover();
 
 // $('#button').on('click', function(){
 //   var value = $('#inputBox').val();
