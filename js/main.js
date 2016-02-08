@@ -10,8 +10,10 @@ function getSelectionText() {
     return text;
 }
 // getSelectionText();
-
-
+$(function () {
+  $('[data-toggle="tooltip"]').tooltip()
+});
+$('#button').tooltip()
 
 // $('#button').on('click', function(){
 //   var value = $('#inputBox').val();
