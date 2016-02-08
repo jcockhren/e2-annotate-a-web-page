@@ -1,0 +1,12 @@
+{
+  "name": "e2-annotate-a-web-page",
+  "homepage": "https://github.com/jcockhren/e2-annotate-a-web-page",
+  "description": "",
+  "main": "",
+  "moduleType": [],
+  "license": "MIT",
+  "dependencies": {
+    "bootstrap": "~3.3.6",
+    "jquery": "~2.2.0"
+  }
+}
