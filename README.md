@@ -8,7 +8,7 @@ Purpose - Allow a user to add notes or Anotation to a selected web page
 - The ability to add comments to pre existing anotations
 - The ability to select a highlight color from a set pallet of choices
 - The ability to share Anotations via Facebook
-- The ability to pull info on the highlighted text from the wiki API
+- The ability to pull info on the highlighted text from the wiki API (Brian)
 
 **Links to Related pages**
 

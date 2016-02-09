@@ -2,11 +2,14 @@
 <html>
 <head>
   <title>Annotator</title>
+  <link rel="stylesheet" type="text/css" href="/lib/bower_components/bootstrap/dist/css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="css/main.css">
+
 </head>
 <body>
  Find a Phrase: <input id="inputBox" type="text">
- <button id="button">Find Text</button>
+ <button id="button" data-toggle="popover" title="hello" data-placement="left" data-content="And here's some amazing content. It's very engaging. Right?">Find Text</button>
+ <!-- view is the tool tip that Brian created for displaying wiki info -->
  <div id="view"></div>
  <!-- <div class="wikiWindow" id="wikiInfo">&nbsp;</div> -->
   <article>
@@ -19,7 +22,8 @@
     <p class="paragraph">Brooklyn drinking vinegar gluten-free williamsburg plaid gochujang, tofu retro literally XOXO disrupt chambray. Roof party distillery next level paleo bitters photo booth. Photo booth echo park 3 wolf moon flannel waistcoat. Yr franzen actually, four loko YOLO listicle roof party tattooed meditation four dollar toast. Dreamcatcher pour-over semiotics lo-fi VHS vinyl. Kombucha you probably haven't heard of them disrupt, jean shorts slow-carb vinyl irony leggings photo booth semiotics flannel viral lomo meditation. Bicycle rights listicle hoodie, meditation photo booth cronut echo park tumblr deep v typewriter bushwick.</p>
   </article>
 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+  <script src="/lib/bower_components/jquery/dist/jquery.min.js"></script>
+  <script src="/lib/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
   <script type="text/javascript" src="js/main.js"></script>
   <script type="text/javascript" src="js/wikiCall.js"></script>
 </body>

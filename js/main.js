@@ -10,8 +10,10 @@ function getSelectionText() {
     return text;
 }
 // getSelectionText();
-
-
+$(function () {
+  $('[data-toggle="popover"]').popover();
+});
+$('#button').popover();
 
 // $('#button').on('click', function(){
 //   var value = $('#inputBox').val();
