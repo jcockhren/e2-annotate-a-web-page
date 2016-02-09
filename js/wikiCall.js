@@ -7,11 +7,14 @@ $('article').mouseup (function() {
   console.log("Text = ",data);
   $( "#view" ).append("<div class='wikiWindow' id='wikiInfo'>&nbsp</div>");
     var wiki =  $.getJSON(callStr, function(json) {
+      // $("."+data+"").attr('data-content', json.parse.text['*']);
+      
       $('#wikiInfo').html(json.parse.text['*']);
       $("#wikiInfo").find("a:not(.references a)").attr("href", function(){ return "http://www.wikipedia.org" + $(this).attr("href");});
       $("#wikiInfo").find("a").attr("target", "_blank");
     });
-    // console.log("Wiki= ",wiki);
+  
+
 
 });
 $("#view").click(function() {
