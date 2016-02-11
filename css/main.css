@@ -8,17 +8,13 @@
 
 .wikiWindow {
   position: absolute;
-  top: 5%;
-  left: 5%;
-  width: 85%;
-  border: 3px solid black;
-  border-radius: 20px;
-  padding: 10px;
+  top:0;
+  right:0;
+  height:100%;
+  width:15%;
   background-color: white;
+  border-left: 2px solid black;
+  z-index: 999;
+
 }
 
-
-
-/*p{
-  font-size: 3em;
-}*/

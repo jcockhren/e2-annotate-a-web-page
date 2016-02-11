@@ -2,15 +2,18 @@
 <html>
 <head>
   <title>Annotator</title>
+  <link rel="stylesheet" type="text/css" href="/lib/bower_components/bootstrap/dist/css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="css/main.css">
+
 </head>
 <body>
  Find a Phrase: <input id="inputBox" type="text">
- <button id="button">Find Text</button>
+ <button id="button" data-toggle="popover" title="hello" data-placement="left" data-content="And here's some amazing content. It's very engaging. Right?">Find Text</button>
+ <!-- view is the tool tip that Brian created for displaying wiki info -->
  <div id="view"></div>
  <!-- <div class="wikiWindow" id="wikiInfo">&nbsp;</div> -->
   <article>
-    <p class="paragraph">Mumblecore locavore dreamcatcher blog, meh trust fund kitsch cornhole keytar flexitarian polaroid disrupt forage. Tilde beard raw denim cray yuccie. Kinfolk everyday carry sriracha wolf, brooklyn taxidermy church-key mixtape fap hammock YOLO shoreditch. Cronut readymade vegan, iPhone post-ironic kombucha pabst trust fund farm-to-table gastropub man braid tousled. Venmo echo park viral artisan intelligentsia. Slow-carb church-key synth, roof party PBR&B brooklyn pork belly knausgaard tumblr banh mi vice green juice offal deep v everyday carry. Bespoke ennui photo booth selfies kale chips fixie.</p>
+    <p class="paragraph1">Mumblecore locavore dreamcatcher blog, meh trust fund kitsch cornhole keytar flexitarian polaroid disrupt forage. Tilde beard raw denim cray yuccie. Kinfolk everyday carry sriracha wolf, brooklyn taxidermy church-key mixtape fap hammock YOLO shoreditch. Cronut readymade vegan, iPhone post-ironic kombucha pabst trust fund farm-to-table gastropub man braid tousled. Venmo echo park viral artisan intelligentsia. Slow-carb church-key synth, roof party PBR&B brooklyn pork belly knausgaard tumblr banh mi vice green juice offal deep v everyday carry. Bespoke ennui photo booth selfies kale chips fixie.</p>
 
     <p class="paragraph">Humblebrag kinfolk paleo, tilde hammock stumptown yuccie shoreditch put a bird on it forage blue bottle retro XOXO roof party DIY. Ramps mumblecore marfa echo park brooklyn. Humblebrag brooklyn vinyl freegan, YOLO squid beard PBR&B flexitarian lo-fi godard. Ethical hoodie small batch intelligentsia kogi. Fashion axe art party sriracha lomo, helvetica man braid vegan semiotics. Kickstarter man bun echo park, waistcoat pour-over kogi paleo man braid 8-bit dreamcatcher affogato fashion axe narwhal thundercats. Everyday carry offal paleo messenger bag, scenester keffiyeh bicycle rights disrupt vegan lumbersexual bitters retro.</p>
 
@@ -19,7 +22,8 @@
     <p class="paragraph">Brooklyn drinking vinegar gluten-free williamsburg plaid gochujang, tofu retro literally XOXO disrupt chambray. Roof party distillery next level paleo bitters photo booth. Photo booth echo park 3 wolf moon flannel waistcoat. Yr franzen actually, four loko YOLO listicle roof party tattooed meditation four dollar toast. Dreamcatcher pour-over semiotics lo-fi VHS vinyl. Kombucha you probably haven't heard of them disrupt, jean shorts slow-carb vinyl irony leggings photo booth semiotics flannel viral lomo meditation. Bicycle rights listicle hoodie, meditation photo booth cronut echo park tumblr deep v typewriter bushwick.</p>
   </article>
 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+  <script src="/lib/bower_components/jquery/dist/jquery.min.js"></script>
+  <script src="/lib/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
   <script type="text/javascript" src="js/main.js"></script>
   <script type="text/javascript" src="js/wikiCall.js"></script>
 </body>
