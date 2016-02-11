@@ -7,7 +7,6 @@ function getSelectionText() {
         var selectionNode = text.anchorNode.parentElement.innerHTML;
         var markedText = selectionNode.replace(textsel, "<mark class='"+text+"' data-toggle='popover' title='hello' data-placement='left' data-content='...'>"+textsel+"</mark>");
         $('.paragraph1').html(markedText);
-        $()
     } else if (document.selection && document.selection.type != "Control") {
         text = document.selection.createRange().text;
     }
