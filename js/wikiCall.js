@@ -1,5 +1,5 @@
 $('article').mouseup (function() {
-  var data = getSelectionText();
+  var data = getSelectionText('#D4FF00');
   var str1 = "http://en.wikipedia.org/w/api.php?action=parse&section=0&page=";
   var str2 = str1.concat(data);
   var callStr = str2.concat("&rvsection=0&prop=text&format=json&callback=?");
