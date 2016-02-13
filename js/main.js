@@ -15,7 +15,6 @@ function getSelectionText() {
     return textsel;
 }
 // getSelectionText();
-$(function () {
-  $('[data-toggle="popover"]').popover();
-});
-$('article').popover();
+$(document).ready(function(){
+    console.log(".ready fired");
+})
