@@ -1,6 +1,10 @@
+var firebaseRef = new Firebase('https://web-annotator.firebaseio.com/');
+
 $('article').mouseup(function() {
     //Create a placeholder selection
     var userSelection = document.getSelection();
+    saveAnnotation(userSelection);
+    // saveAnnotation(getSelectionRange(userSelection));
     //abstract magic using the selection the user just made
     markRange(getSelectionRange(userSelection), '#ffae14');
 });
