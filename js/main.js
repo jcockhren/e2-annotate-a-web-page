@@ -15,6 +15,26 @@ function getSelectionText() {
     return textsel;
 }
 // getSelectionText();
+
+//once the document is ready will fire function
 $(document).ready(function(){
-    console.log(".ready fired");
+    var color = '#ff0000';
+    //turns document editing mode on
+    window.designMode = "on";
+    //loops to go through all elements in local storage and console values
+    for(var i in localStorage){
+
+        var StoredRange = JSON.parse(localStorage[i]);
+        var CreateRange = document.createRange();
+
+        CreateRange.setStart(document.getElementById(StoredRange.startNode), StoredRange.startOffset);
+        CreateRange.setEnd(document.getElementById(StoredRange.endNode), StoredRange.endOffset);
+        
+        console.log(CreateRange);
+        window.getSelection();
+        window.addRange(CreateRange);
+        window.execCommand("hiliteColor", false, color);
+    }
+    document.designMode = "off";
+
 })

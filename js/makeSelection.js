@@ -24,12 +24,30 @@ var getSelectionRange =  function(userSelection) {
 };
 
 var markRange = function(selectionRange, color) {
+  console.log(selectionRange);
   // Create a placeholder selection
-  var highlightedSelection = window.getSelection();
+  var highlightedSelection = document.getSelection();
   // Remove default range(s) given to selection when instantiated.
   highlightedSelection.removeAllRanges();
   // Add range of user's selection to new selection object.
   highlightedSelection.addRange(selectionRange);
+
+  var selectionObj = {
+    startOffSet: selectionRange.startOffset,
+    startNode: selectionRange.startContainer.parentElement.id,
+    endOffSet: selectionRange.endOffset,
+    endNode: selectionRange.endContainer.parentElement.id
+  }
+  console.log(JSON.stringify(selectionObj));
+
+
+  //create process to save to local storage
+  //create the Key value
+  var keyName = selectionRange.toString().substring(0,4);
+
+  //creates new localStorage instance with the keyName and user Range selection object
+  localStorage.setItem(keyName,JSON.stringify(selectionObj));
+  
   //Highlight new selection
   document.designMode = "on";
   document.execCommand("hiliteColor", false, color);
