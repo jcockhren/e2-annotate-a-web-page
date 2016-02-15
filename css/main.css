@@ -1,3 +1,7 @@
+body{
+  margin: 0 5%;
+}
+
 .colorRed {
   background-color: red;
 }
@@ -14,7 +18,9 @@
   width:15%;
   background-color: white;
   border-left: 2px solid black;
-  z-index: 999;
-
+  z-index: 9999999;
+}
+nav{
+  color: white;
 }
 

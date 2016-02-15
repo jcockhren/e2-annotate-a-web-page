@@ -23,7 +23,7 @@ $(document).ready(function(){
     window.designMode = "on";
     //loops to go through all elements in local storage and console values
     for(var i in localStorage){
-
+        window.getSelection();
         var StoredRange = JSON.parse(localStorage[i]);
         var CreateRange = document.createRange();
 
