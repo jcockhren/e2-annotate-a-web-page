@@ -1,10 +1,55 @@
+body{
+  margin: 0 5%;
+}
+
+article{
+  font-size: 1.5em;
+}
+.colorRed {
+  background-color: red;
+}
+
+.colorYellow {
+  background-color: yellow;
+}
 .wikiWindow {
-  position: absolute;
+  position: fixed;
   top:0;
   right:0;
   height:100%;
-  width:15%;
-  background-color: white;
-  border-left: 2px solid black;
-  z-index: 999;
+  width:20%;
+  z-index: 9999999;
+}
+nav{
+  color: white;
+}
+
+img{
+    border: 3px solid black;
+}
+img:first-of-type{
+  margin-left: 3px;
+  float:right;
+}
+img:last-of-type{
+  margin-right: 3px;
+  float:left;
+}
+.displayNone{
+  display: none;
+}
+.glyphicon-remove-circle{
+  font-size: 1.5em;
+  text-align: right;
+  display: block;
+}
+h3{
+  border-bottom: 2px solid black;
+  margin-bottom: 20px;
+}
+.bicycle{
+    position: absolute;
+    top: 5px;
+    right: 0;
+    height: 80px;
 }
