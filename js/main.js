@@ -20,21 +20,16 @@ function getSelectionText() {
 $(document).ready(function(){
     var color = '#ff0000';
     //turns document editing mode on
-    window.designMode = "on";
     //loops to go through all elements in local storage and console values
     for(var i in localStorage){
-        window.getSelection();
-        var StoredRange = JSON.parse(localStorage[i]);
-        var CreateRange = document.createRange();
-
-        CreateRange.setStart(document.getElementById(StoredRange.startNode), StoredRange.startOffset);
-        CreateRange.setEnd(document.getElementById(StoredRange.endNode), StoredRange.endOffset);
-        
-        console.log(CreateRange);
-        window.getSelection();
-        window.addRange(CreateRange);
-        window.execCommand("hiliteColor", false, color);
+        //parse item to get id
+        var id = localStorage[i].slice(0,(localStorage[i].search("-")));
+        //parse item to get selected text
+        var text = localStorage[i].slice((localStorage[i].search("-")+1), (localStorage[i].length));
+        //get text from paragraph specified in the item
+        var paraText = $("#"+id).text();
+        //replace the text in the item with "marked" text and rerender to the dom
+        var markedText = paraText.replace(text, "<mark>"+text+"</mark>")
+        $("#"+id).html(markedText);
     }
-    document.designMode = "off";
-
 })
