@@ -47,6 +47,10 @@ img:last-of-type{
 h3{
   border-bottom: 2px solid black;
   margin-bottom: 20px;
-
 }
-
+.bicycle{
+    position: absolute;
+    top: 5px;
+    right: 0;
+    height: 80px;
+}
